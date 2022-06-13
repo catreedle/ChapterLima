@@ -35,10 +35,16 @@ class MainActivity : AppCompatActivity(), OnBoardLoginFragment.UserNameInputList
             val currentIndex = viewPager.currentItem
             viewPager.currentItem = currentIndex+1
 
+//            if(currentIndex == 2) {
+//                val intentToHome = Intent(this, HomeActivity::class.java)
+//                intentToHome.putExtra("DATA_USER_NAME", namaUser)
+//                startActivity(intentToHome)
+//            }
+
             if(currentIndex == 2) {
-                val intentToHome = Intent(this, HomeActivity::class.java)
-                intentToHome.putExtra("DATA_USER_NAME", namaUser)
-                startActivity(intentToHome)
+                val intentToMenu = Intent(this, MenuActivity::class.java)
+                intentToMenu.putExtra("DATA_USER_NAME", namaUser)
+                startActivity(intentToMenu)
             }
 
             if(currentIndex == 0) {

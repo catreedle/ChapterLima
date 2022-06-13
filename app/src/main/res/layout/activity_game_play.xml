@@ -35,29 +35,29 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_head">
 
         <ImageView
-            android:id="@+id/tv_you"
+            android:id="@+id/gunting1"
             android:layout_width="52dp"
             android:layout_height="33dp"
             android:layout_gravity="center"
             android:background="@drawable/kertas"/>
 
         <ImageView
-            android:id="@+id/iv_rock_p1"
+            android:id="@+id/gunting1"
             style="@style/hand_size"
             android:layout_marginTop="16dp"
             android:background="@drawable/gunting"/>
 
         <ImageView
-            android:id="@+id/iv_paper_p1"
-            style="@style/hand_size"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/kertas"/>
-
-        <ImageView
-            android:id="@+id/iv_scissor_p1"
+            android:id="@+id/batu1"
             style="@style/hand_size"
             android:layout_marginTop="32dp"
             android:background="@drawable/batu"/>
+
+        <ImageView
+            android:id="@+id/kertas1"
+            style="@style/hand_size"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/kertas"/>
 
     </LinearLayout>
 
@@ -90,19 +90,19 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_head" />
 
         <ImageView
-            android:id="@+id/iv_rock_p2"
+            android:id="@+id/gunting2"
             style="@style/hand_size"
             android:layout_marginTop="16dp"
-            android:src="@drawable/batu" />
-
-        <ImageView
-            android:id="@+id/iv_paper_p2"
-            style="@style/hand_size"
-            android:layout_marginTop="32dp"
             android:src="@drawable/gunting" />
 
         <ImageView
-            android:id="@+id/iv_scissor_p2"
+            android:id="@+id/batu2"
+            style="@style/hand_size"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/batu" />
+
+        <ImageView
+            android:id="@+id/kertas2"
             style="@style/hand_size"
             android:layout_marginTop="32dp"
             android:src="@drawable/kertas" />
