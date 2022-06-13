@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#0a2b52" />
+        </shape>
+    </item>
+
+    <item
+        android:id="@+id/title"
+        android:width="200dp"
+        android:height="200dp"
+        android:top="80dp"
+        android:gravity="center_horizontal">
+        <bitmap
+            android:gravity="fill_horizontal|fill_vertical"
+            android:src="@drawable/splash_screen1" />
+    </item>
+
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:gravity="center"
+        android:top="100dp">
+        <bitmap
+            android:gravity="fill_horizontal|fill_vertical"
+            android:src="@drawable/splash_screen2" />
+    </item>
+
+</layer-list>
