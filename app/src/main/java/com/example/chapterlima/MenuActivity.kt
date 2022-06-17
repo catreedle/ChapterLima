@@ -11,8 +11,10 @@ class MenuActivity : AppCompatActivity() {
 
 
         val namaUser = intent.getStringExtra("DATA_USER_NAME")
-        val textView : TextView = findViewById(R.id.text_name) as TextView
+        val textTop : TextView = findViewById(R.id.text_name1) as TextView
+        val textBottom : TextView = findViewById(R.id.text_name2) as TextView
 //        var textName = R.id.text_name
-        textView.text = namaUser
+        textTop.text = namaUser + " vs Pemain"
+        textBottom.text = namaUser + " vs CPU"
     }
 }

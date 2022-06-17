@@ -6,53 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PILIH LAWANMU"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="103dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="214dp"
-        android:layout_height="181dp"
-        android:src="@drawable/landing_page1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true">
 
-    <TextView
-        android:id="@+id/text_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kamu vs Pemain"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="332dp" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PILIH LAWANMU"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="90dp"
+            android:textSize="14sp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="100dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="214dp"
+                android:layout_height="181dp"
+                android:src="@drawable/landing_page1" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kamu vs CPU"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="599dp" />
+            <TextView
+                android:id="@+id/text_name1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="oyakodon"
+                android:textSize="14sp"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="215dp"
-        android:layout_height="181dp"
-        android:src="@drawable/landing_page2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="400dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="215dp"
+                android:layout_height="181dp"
+                android:src="@drawable/landing_page2"/>
+            <TextView
+                android:id="@+id/text_name2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="oyakodon"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
